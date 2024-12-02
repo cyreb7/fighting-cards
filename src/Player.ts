@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from "./cards/Card";
 
 export default class Player {
   public deck: Array<Card>;
@@ -6,6 +6,6 @@ export default class Player {
 
   constructor(name: string) {
     this.name = name;
-    this.deck = [new Card("Test Card")];
+    this.deck = [new Card("1"), new Card("2")];
   }
 }

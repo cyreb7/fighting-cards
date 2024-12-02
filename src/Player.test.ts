@@ -14,7 +14,7 @@ describe("Public methods", () => {
     const player = new Player("Test Name");
     const deck = player.deck;
 
-    assert.equal(deck.length, 1);
-    assert.equal(deck[0].name, "Test Card");
+    assert.equal(deck.length, 2);
+    assert.equal(deck[0].definition.name, "First Card");
   });
 });

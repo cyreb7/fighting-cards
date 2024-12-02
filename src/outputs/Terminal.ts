@@ -21,7 +21,7 @@ export default class Terminal extends Output {
 
     console.group("Deck:");
     for (const card of deck) {
-      console.log(`* ${card.name}`);
+      console.log(`* ${card.definition.name}`);
     }
     console.groupEnd();
   }
