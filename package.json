@@ -1,0 +1,33 @@
+{
+  "name": "fighting-cards",
+  "version": "0.0.1",
+  "description": "A digital trading card game based on fighting games",
+  "main": "src/main.ts",
+  "engines": {
+    "node": "^22",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "start": "tsx src/main.ts",
+    "build": "tsc --build",
+    "test": "concurrently --kill-others-on-fail --prefix none npm:test:*",
+    "test:all": "tsx --test \"./src/**/*.test.ts\"",
+    "lint": "prettier --check src/ && eslint src/",
+    "lint-fix": "prettier --write src/ && eslint --fix src/"
+  },
+  "author": "Bryce Newbury",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "@types/node": "^22.10.1",
+    "eslint": "^9.16.0",
+    "globals": "^15.13.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.16.0",
+    "concurrently": "^9.1.0",
+    "prettier": "^3.4.1"
+  }
+
+}
