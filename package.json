@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "A digital trading card game based on fighting games",
   "main": "src/main.ts",
+  "type": "module",
   "engines": {
     "node": "^22",
     "npm": ">=10"

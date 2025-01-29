@@ -6,10 +6,14 @@ interface CardList {
 }
 
 export default class Card {
-  public definition: CardDefinition;
+  private definition: CardDefinition;
 
   constructor(cardListId: string) {
     const list: CardList = cardList;
     this.definition = list[cardListId];
+  }
+
+  get name(): string {
+    return this.definition.name;
   }
 }
